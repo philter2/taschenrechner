@@ -21,3 +21,6 @@ Story: Als Benutzer möchte ich den Taschenrechen schnell aufrufen können, um mem
 Akzeptanzkriterien:
 •	Die Anwendung wird innerhalb von 2 Sekunden auf einem Rechner gestartet
 •	Die Anwendung läfut auf einem Rechner mit Windows 10
+
+
+Teständerung
