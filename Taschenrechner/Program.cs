@@ -8,14 +8,23 @@ namespace Taschenrechner
 {
     class Program
     {
+        // METHODE DEFINIEREN in 7 Schritten
+        // Modifizierer Definieren (z.B. static)
+        // Datentyp des Rückgabewertes definieren
+        // Methodennamen definieren
+        // Rundeklammern an den Methodennamen anfügen
+        // Überlegen welche Parameter benötigt werden (optonal diese definieren)
+        // Geschweifte Klammern einfügen
+        // Methode implementieren (Anweisungen in den Methodenrumpf schreiben)
+
+ 
+
         static void Main(string[] args)
         {
 
             // User Story "Addieren": Als Benutzer möchte ich zwei Zahlen eingeben, um deren Summe berechnen zu lassen
-            Console.WriteLine("Erste Zahl eingeben und mit Enter bestätigen:");
-            string ersterSummand = Console.ReadLine();
-            Console.WriteLine("Zweite Zahl eingeben und mit Enter bestätigen:");
-            string zweiterSummand = Console.ReadLine();
+            string ersterSummand = HoleSummanden("Erste Zahl eingeben und mit Enter bestätigen:");
+            string zweiterSummand = HoleSummanden("Zweite Zahl eingeben und mit Enter bestätigen:");
 
             // Konvertierung string to float
             double ersterSumandAlsZahl = Convert.ToDouble(ersterSummand);
@@ -42,5 +51,13 @@ namespace Taschenrechner
             Console.Write("Zum beenden bitte Taste drücken");
             Console.ReadLine();
         }
+
+        static string HoleSummanden(string ausgabeText)
+        {
+            Console.WriteLine(ausgabeText);
+            string summand = Console.ReadLine();
+            return summand;
+        }
     }
+
 }
